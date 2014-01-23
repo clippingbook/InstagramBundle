@@ -1,5 +1,5 @@
 {
-    "name": "eko/instagrambundle",
+    "name": "carlosromero/instagrambundle",
     "type": "library",
     "description": "A Symfony Instagram bundle",
     "keywords": ["instagram", "bundle", "symfony"],
@@ -11,6 +11,9 @@
             "email": "vincent.composieux@gmail.com"
         }
     ],
+    "replace": {
+        "eko/instantgrambundle": "*"
+    }
     "require": {
         "php": ">=5.3.2",
         "symfony/framework-bundle": "2.*",
