@@ -69,8 +69,11 @@ class Endpoint extends Client
         }
 
         $token = $this->application->getAccessToken();
-
-        $url = sprintf($url . '?access_token=%s', $token);
+        if ($token) {
+                $url = sprintf($url . '?access_token=%s', $token);
+        } else {
+                $url = sprintf($url . '?client_id=%s', $this->application->getParameter('client_id'));
+        }
         $url .= '&' . http_build_query($options);
 
         $response = $this->client->get($url)->send();
