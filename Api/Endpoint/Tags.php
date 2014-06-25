@@ -55,7 +55,6 @@ class Tags extends Endpoint
      */
     public function getRecentMedias($identifier, array $options = array())
     {
-        $identifier =  $identifier;
         $url = '/v1/tags/'. $identifier .'/media/recent';
 
         return $this->executeRequest('get', $url, $options);
