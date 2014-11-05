@@ -1,5 +1,5 @@
 {
-    "name": "carlosromero/instagrambundle",
+    "name": "clippingbook/instagrambundle",
     "type": "library",
     "description": "A Symfony Instagram bundle",
     "keywords": ["instagram", "bundle", "symfony"],
